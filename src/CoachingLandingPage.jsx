@@ -6,9 +6,9 @@ const packages = [
     price: "£129/mo",
     description: "For self-starters who want direction without ongoing contact.",
     features: [
-      "Bi-weekly check-ins",
-      "Template training plans",
-      "Macro guidance",
+      "Nutrition or Training Only",
+      "Monthly Check-ins",
+      "Email Support",
       "Limited app tracking"
     ]
   },
@@ -20,41 +20,42 @@ const packages = [
       "Weekly check-ins",
       "Custom training & nutrition (monthly updates)",
       "WhatsApp support",
-      "Form feedback on request"
+      "Techincal analysis"
     ]
   },
   {
     name: "Elite",
-    price: "£399/mo",
+    price: "£299/mo",
     description: "For high-performers seeking full optimisation and premium results.",
     features: [
       "Unlimited feedback & communication",
       "Real-time plan updates",
-      "Strategy Zoom calls",
+      "Weekly Zoom calls",
       "Full training, nutrition, mindset, and event prep support"
     ]
   }
 ];
 
 const transformationProgram = {
-  name: "12-Week Transformation",
-  price: "£499 – £799",
+  name: "12-Week Photoshoot Transformation",
+  price: "£999",
   description:
-    "A results-focused, high-touch coaching experience. Build lean muscle, drop fat, and lock in habits.",
+    "A results-focused, high-touch coaching experience. Optimised to show you off as your best self.",
   features: [
     "Custom training + nutrition",
     "Weekly check-ins, form reviews, Zoom access",
     "Supplement + recovery stack guidance",
-    "Mindset + community support"
+    "Mindset + community support",
+    "Photographers fee included in the price (T&C's apply)"
   ]
 };
 
 const transformations = [
-  { image: "/30.png", caption: "Lost 10kg and built visible definition in 12 weeks." },
-  { image: "/31.png", caption: "Strong, lean, confident. A total mindset and body shift." },
-  { image: "/34.png", caption: "Shredded and athletic after a full lifestyle reset." },
-  { image: "/50.png", caption: "From hesitant to high-performance. Strength + physique unlocked." },
-  { image: "/54.png", caption: "Lean mass, structure, and serious progress in just 12 weeks." },
+  { image: "/30.png", caption: "From dad-bod to oh-god." },
+  { image: "/31.png", caption: "Strong, lean, bad-ass. A total mindset and body shift." },
+  { image: "/34.png", caption: "The results of going all in on yourself." },
+  { image: "/50.png", caption: "From high performer to high performance." },
+  { image: "/54.png", caption: "More muscle, more energy, more unstoppable." },
   { image: "/61.png", caption: "Reclaimed energy, shape, and confidence." }
 ];
 
@@ -64,7 +65,7 @@ export default function CoachingLandingPage() {
       <header className="text-center">
         <img src="/logo.png" alt="Team HJ Coaching" className="mx-auto w-40 mb-4" />
         <h1 className="text-4xl font-bold">Find the Coaching Path That Fits You Best</h1>
-        <p className="text-lg mt-2">Flexible, personalized plans built around your lifestyle goals.</p>
+        <p className="text-lg mt-2">Flexible, high performance plans built around your lifestyle goals.</p>
       </header>
 
       <section>
@@ -85,7 +86,7 @@ export default function CoachingLandingPage() {
                     ? "https://buy.stripe.com/8wM5mO1XFaIL316dRe"
                     : pkg.name === "General"
                     ? "https://buy.stripe.com/14kcPggSz3gjcBGcN9"
-                    : "https://buy.stripe.com/9AQ16ycCjaILaty7sO"
+                    : "https://buy.stripe.com/fZe2aC0TB7wzgRW9AZ"
                 }
                 target="_blank"
                 rel="noopener noreferrer"
