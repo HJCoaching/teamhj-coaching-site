@@ -63,7 +63,7 @@ export default function CoachingLandingPage() {
   return (
     <div className="p-6 md:p-12 max-w-7xl mx-auto space-y-16">
       <header className="text-center">
-        <img src="/logo.png" alt="Team HJ Coaching" className="mx-auto w-40 mb-4" />
+        <img src="/logo.png" alt="Team HJ Coaching" className="mx-auto w-120 mb-4" />
         <h1 className="text-4xl font-bold">Find the Coaching Path That Fits You Best</h1>
         <p className="text-lg mt-2">Flexible, high performance plans built around your lifestyle goals.</p>
       </header>
